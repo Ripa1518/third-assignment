@@ -12,7 +12,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            'bike-primary': '#E76F51',
+            'house-primary': '#ABEF5F',
           },
         },
       },
@@ -26,6 +26,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+  <!-- font awesome  -->
+   <script src="https://kit.fontawesome.com/ff69b6a5d3.js" crossorigin="anonymous"></script>
+
 <style>
     .manrope{
          font-family: "Manrope", sans-serif;
@@ -34,9 +37,48 @@
 
 </head>
 <body class="manrope">
-    <header>
+   <header class="container mx-auto my-6">
+    <div class="navbar bg-base-100">
+  <div class="md:navbar-start flex-1 lg:flex-initial ">
+    <i class="fa-solid fa-arrow-right -rotate-45 h-7 w-7 bg-house-primary rounded-full flex justify-center items-center"></i>
+    <a class="ml-3 text-3xl font-bold">Rinterio</a>
+  </div>
+  <div class=" hidden md:hidden lg:flex flex-1 justify-center">
+    <ul class="menu menu-horizontal px-1">
+      <li class="text-black font-bold"><a>Home </a></li>
+      <li><a>Service</a></li>
+      <li><a>Portfolio</a></li>
+      <li><a>Contact</a></li>
+      <li><a>Blogs</a></li>
+      <li><a>Contact us</a></li>
+    </ul>
+  </div>
+  <div class=" justify-end">
+    <div class="hidden md:flex"><a href="" class="w-10 h-10 rounded-full border border-gray-300 mr-3 flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <a href="" class="w-10 h-10 rounded-full border border-gray-300 mr-3 flex justify-center items-center"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="btn bg-house-primary rounded-3xl text-xl font-bold">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 h-7 w-7 bg-black text-white rounded-full flex justify-center items-center"></i></a></div>
+     <div class="dropdown">
 
-    </header>
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-9 w-9"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+   </header>
     <main>
 
     </main>
