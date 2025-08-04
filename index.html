@@ -10,11 +10,13 @@
     tailwind.config = {
       theme: {
         extend: {
+          backgroundImage:{
+            'rough-bg':"url('assets/bg.jpg')"
+          },
           colors: {
             clifford: '#da373d',
             'house-primary': '#ABEF5F',
             'house-secondary': 'rgba(171, 239, 95, 0.5)',
-            'house-secondary-bg': 'rgb(30, 30, 30)',
           },
         },
       },
@@ -275,7 +277,7 @@ modern sophistication</small>
  </section>
 
  <!-- Read Our Articles and News  -->
-  <section class="my-14 bg-gray-200 ">
+  <section class="mt-14 bg-gray-200 ">
    <div class="text-center space-y-4  py-5">
      <button class="btn bg-house-secondary rounded-3xl px-5"> <i class="fa-solid fa-arrow-right  flex justify-center items-center"></i>Rinterio News</button>
     <h2 class="text-xl md:text-4xl font-bold">Read Our Articles and News</h2>
@@ -337,6 +339,41 @@ modern sophistication</small>
     </div>
 
   </section>
+
+  <!-- Let’s Discuss Next Project  -->
+   <section class="bg-rough-bg bg-cover bg-center my-5 ">
+      <div class="text-center py-8 space-y-4">
+        <button class="btn bg-house-secondary rounded-3xl px-5"> <i class="fa-solid fa-arrow-right  flex justify-center items-center"></i>Let’s Connect</button>
+        <h2 class="text-4xl font-bold">Let’s Discuss Next Project </h2>
+        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring <br> weathered wood, sleek metal accents.</p>
+      </div>
+      <!-- inputbox  -->
+      <div class=" mx-2 md:mx-28 grid grid-cols-1 md:grid-cols-2  gap-5 py-5">
+        <input
+  type="text"
+  placeholder="First Name*"
+  class="input input-bordered rounded-3xl" />
+        <input
+  type="text"
+  placeholder="Last Name*"
+  class="input input-bordered rounded-3xl"  />
+        <input
+  type="text"
+  placeholder="Phone Number*"
+  class="input input-bordered rounded-3xl" />
+        <input
+  type="text"
+  placeholder="Email Number*"
+  class="input input-bordered rounded-3xl" />
+<textarea
+  placeholder="Write your message here"
+  class="textarea textarea-bordered  w-full md:col-span-2 row-span-3 rounded-3xl"></textarea>
+  <a class="btn bg-house-primary rounded-3xl text-xl font-bold md:col-span-2">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 h-7 w-7 bg-black text-white rounded-full flex justify-center items-center"></i></a>
+      </div>
+      <div>
+        
+      </div>
+   </section>
      
 
     </main>
